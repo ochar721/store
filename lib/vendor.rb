@@ -36,4 +36,10 @@ class Vendor
       item.name
     end.uniq
   end
+
+  def total_amount
+    @inventory.sum do |item, amount|
+      amount
+    end
+  end
 end

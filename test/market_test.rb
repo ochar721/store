@@ -106,7 +106,7 @@ class MarketTest < Minitest::Test
   end
 
   def test_market_total_inventory
-  skip
+  # skip
   @vendor1.stock(@item1, 35)
   @vendor1.stock(@item2, 7)
 
@@ -137,6 +137,7 @@ class MarketTest < Minitest::Test
   end
 
   def test_it_can_check_overstocked_items
+    skip
     @vendor1.stock(@item1, 35)
     @vendor1.stock(@item2, 7)
 

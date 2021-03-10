@@ -30,10 +30,8 @@ class Market
   end
 
   def total_inventory
-    
-
+    # {items: => inventory.keys
+    #  {quantity:  @vendors.total_amount, vendors: @vendors }}
   end
-
-  def overstocked_items
-  end
+  #trying to envision this
 end
