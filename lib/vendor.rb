@@ -30,4 +30,10 @@ class Vendor
       item.price * amount
     end
   end
+
+  def sorted_items
+    @inventory.flat_map do |item, amount|
+      item.name
+    end.uniq
+  end
 end
